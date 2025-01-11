@@ -302,7 +302,7 @@ object Game extends App {
 
   grid_dispaly(resultGrid)
 
-  def moveUp(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
+  def moveUpEarly(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
     var bool = true
     var countChanged = 0
     var moveInt = 0
@@ -387,7 +387,7 @@ object Game extends App {
     return arrArrInt
   }
 
-  def moveDown(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
+  def moveDownEarly(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
     println("MoveDown")
     var bool = true
     var countChanged = 0
@@ -606,7 +606,7 @@ object Game extends App {
   }
 
 
-  def moveUpG(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
+  def moveUp(arrArrInt: Array[Array[Int]]): Array[Array[Int]] = {
     println("MoveUp")
 
     def shiftAndMergeColumn(col: Int): Unit = {
